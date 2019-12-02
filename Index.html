@@ -8,35 +8,16 @@ Tinggi : <input id="tinggi"><br>
 	
 	</div>
 
-
-</div>
-
-<h2>Menghitung luas segiempat</h2>
-<div id="content">
-Sisi : <input id="sisi"><br>
-	<input type="submit" value="Hitung" onclick="hitungLuasSegiempat()">
-	<div id="hasil-2">
-	
-	</div>
-	
-	
 </div>
 
 <script>
-function hitungLuasSegitiga(){
-	var a = document.getElementById('alas').value;
-	var t = document.getElementById('tinggi').value;
-	var hasil = document.getElementById('hasil');
-	var luas = (a*t)/2;
-	hasil.innerText = luas;
-	console.log(luas);
+	function hitungLuasSegitiga(){
+		var a = document.getElementById('alas').value;
+		var t = document.getElementById('tinggi').value;
+		var hasil = document.getElementById('hasil');
+		var luas = (a * t)/2;
+		hasil.innerText = luas;
+		console.log(luas);
 	}
 	
-function hitungLuasSegiempat(){
-	var sisi = document.getElementById('sisi').value;
-	var hasil = document.getElementById('hasil-2');
-	var luas = (sisi*sisi)
-	hasil.innerText = luas;
-	console.log(luas);
-	}
 </script>
